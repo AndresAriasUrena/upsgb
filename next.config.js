@@ -1,7 +1,11 @@
-module.exports = {
-  images: {
-    domains: ['images.unsplash.com', 'picsum.photos'],
-  },
+// next.config.js
+const nextConfig = {
   output: 'export',
-  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+  basePath: '/upsgb', // Reemplaza con el nombre de tu repositorio
+  assetPrefix: '/upsgb/', // Reemplaza con el nombre de tu repositorio
 };
+
+module.exports = nextConfig;
