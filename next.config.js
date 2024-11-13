@@ -1,11 +1,13 @@
-// next.config.js
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
   },
-  basePath: '/upsgb', // Reemplaza con el nombre de tu repositorio
-  assetPrefix: '/upsgb/', // Reemplaza con el nombre de tu repositorio
+  // Necesario para GitHub Pages
+  basePath: '/upsgb',
+  assetPrefix: '/upsgb/',
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
