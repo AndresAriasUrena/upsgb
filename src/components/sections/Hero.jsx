@@ -24,7 +24,7 @@ export default function Hero() {
               </Button>
               <Button 
                 variant="outline"
-                className="bg-transparent text-white border-white hover:bg-white/10"
+                className="bg-transparent text-primary-800 border-primary-900 hover:border-white hover:bg-white/10 hover:text-white"
                 onClick={() => window.location.href = '/contacto'}
               >
                 Contáctenos
