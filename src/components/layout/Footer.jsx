@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { footerNavigation } from '@/data/navigation';
 
-export default function Footer() {
+export default function Footer({ basePath = '' }) {
   return (
     <footer className="bg-white border-t border-gray-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

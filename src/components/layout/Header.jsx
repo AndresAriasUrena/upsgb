@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { navigation } from '@/data/navigation';
 import { Menu, X } from 'lucide-react';
 
-export default function Header() {
+export default function Header({ basePath = '' }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter();
 

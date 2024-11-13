@@ -4,7 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Necesario para GitHub Pages
   basePath: '/upsgb',
   assetPrefix: '/upsgb/',
   trailingSlash: true,
