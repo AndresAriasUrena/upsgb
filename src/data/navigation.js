@@ -1,20 +1,22 @@
 // src/data/navigation.js
 export const navigation = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Historia', href: '/historia' }, // Nueva entrada
+  { name: 'Servicios', href: '/servicios' },
+  { name: 'Proyectos', href: '/proyectos' },
+  { name: 'Actividades', href: '/actividades' },
+  { name: 'Contacto', href: '/contacto' },
+];
+
+export const footerNavigation = {
+  main: [
     { name: 'Inicio', href: '/' },
+    { name: 'Historia', href: '/historia' }, // Nueva entrada
     { name: 'Servicios', href: '/servicios' },
     { name: 'Proyectos', href: '/proyectos' },
     { name: 'Actividades', href: '/actividades' },
     { name: 'Contacto', href: '/contacto' },
-  ];
-  
-  export const footerNavigation = {
-    main: [
-      { name: 'Inicio', href: '/' },
-      { name: 'Servicios', href: '/servicios' },
-      { name: 'Proyectos', href: '/proyectos' },
-      { name: 'Actividades', href: '/actividades' },
-      { name: 'Contacto', href: '/contacto' },
-    ],
+  ],
     social: [
       {
         name: 'Facebook',
