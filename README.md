@@ -1,40 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+🎉 ¡Emocionado de compartir nuestro último proyecto de responsabilidad social!
+Hemos completado la modernización del sitio web de la Unidad Pedagógica Sotero González B., transformando un sitio web básico de Wix de 2016 en una plataforma moderna y escalable.
+🏫 Sobre el proyecto:
 
-## Getting Started
+Cliente: Unidad Pedagógica Sotero González B.
+Ubicación: San Juan de Dios, Desamparados
+Objetivo: Mejorar la presencia digital de la institución
 
-First, run the development server:
+📈 Mejoras principales:
 
+Migración de Wix a Next.js/React
+Diseño responsive y moderno
+Mejor rendimiento y tiempos de carga
+Sistema de gestión de contenido simplificado
+Código abierto y mantenible
+
+🛠️ Tecnologías utilizadas:
+
+Next.js
+React
+Tailwind CSS
+GitHub Pages
+CI/CD con GitHub Actions
+
+💡 Beneficios para la escuela:
+
+Mayor visibilidad de sus programas y logros
+Facilidad de actualización de contenido
+Mejor experiencia para padres y estudiantes
+Cero costos de mantenimiento
+Plataforma escalable para futuro crecimiento
+
+Agradecido por la oportunidad de contribuir al desarrollo tecnológico de instituciones educativas en nuestra comunidad. Este proyecto demuestra cómo la tecnología moderna puede hacer una diferencia significativa en la comunicación y accesibilidad de la información educativa.
+#DesarrolloWeb #ResponsabilidadSocial #Educación #TechForGood #OpenSource #CostaRica
+
+
+1. Flujo de trabajo para actualizaciones:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Desarrollo local
+npm run dev  # Para probar cambios
+
+# Antes de desplegar
+git add .
+git commit -m "Descripción de los cambios"
+git push origin main  # Actualiza el repositorio
+
+# Despliegue
+npm run deploy  # Actualiza GitHub Pages
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Estructura importante a mantener:
+```
+school-website/
+├── src/
+│   ├── styles/
+│   │   └── globals.css    # Estilos globales
+│   ├── components/        # Componentes reutilizables
+│   ├── pages/            # Rutas de la aplicación
+│   └── data/             # Datos estáticos
+├── public/               # Archivos estáticos
+├── next.config.js        # Configuración de Next.js
+├── tailwind.config.js    # Configuración de Tailwind
+└── .env.production       # Variables de entorno para producción
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3. Archivos clave a no modificar:
+- `next.config.js` - Mantiene la configuración para GitHub Pages
+- `.env.production` - Contiene el NEXT_PUBLIC_BASE_PATH
+- La estructura base del `package.json`
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+4. Para futuras modificaciones:
+- Contenido: Actualizar los archivos en `src/data/`
+- Estilos: Modificar componentes individuales o `globals.css`
+- Nuevas páginas: Crear en `src/pages/`
+- Imágenes: Añadir en `public/`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+5. Puntos a recordar:
+- El sitio estará siempre disponible en https://andresariasurena.github.io/upsgb/
+- Los cambios en `main` no se reflejan automáticamente; siempre usar `npm run deploy`
+- Mantener respaldos del contenido en caso de necesitar revertir cambios
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
