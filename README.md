@@ -1,8 +1,8 @@
 🎉 ¡Emocionado de compartir nuestro último proyecto de responsabilidad social!
-Hemos completado la modernización del sitio web de la Unidad Pedagógica Sotero González B., transformando un sitio web básico de Wix de 2016 en una plataforma moderna y escalable.
+Hemos completado la modernización del sitio web de la Escuela Sotero González B., transformando un sitio web básico de Wix de 2016 en una plataforma moderna y escalable.
 🏫 Sobre el proyecto:
 
-Cliente: Unidad Pedagógica Sotero González B.
+Cliente: Escuela Sotero González B.
 Ubicación: San Juan de Dios, Desamparados
 Objetivo: Mejorar la presencia digital de la institución
 

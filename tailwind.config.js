@@ -36,6 +36,9 @@ module.exports = {
         sans: ['Inter var', 'sans-serif'],
         display: ['Inter var', 'sans-serif'],
       },
+      backgroundImage: {
+        "hero_bg": "url('../assets/img/herobg.png')",
+      },
     },
   },
   plugins: [],

@@ -2,6 +2,8 @@
 import Container from '@/components/ui/Container';
 import Card from '@/components/ui/Card';
 import { GraduationCap, Music, Users, Code, Book, Award, Globe, Heart } from 'lucide-react';
+import Image from 'next/image';
+import { academico1, academico2, academico3, especial1, especial2, especial3, cultural1, cultural2 } from '@/assets';
 
 const serviciosData = [
   {
@@ -11,16 +13,19 @@ const serviciosData = [
       {
         nombre: "Educación Preescolar",
         descripcion: "Desarrollo temprano y preparación para la educación primaria",
+        image: academico1,
         icon: Heart
       },
       {
         nombre: "Primer Ciclo",
         descripcion: "De primer a tercer grado de educación primaria",
+        image: academico2,
         icon: GraduationCap
       },
       {
         nombre: "Segundo Ciclo",
         descripcion: "De cuarto a sexto grado de educación primaria",
+        image: academico3,
         icon: Book
       }
     ]
@@ -32,16 +37,19 @@ const serviciosData = [
       {
         nombre: "Educación Especial",
         descripcion: "Atención personalizada para necesidades especiales",
+        image: especial1,
         icon: Users
       },
       {
         nombre: "Informática y Robótica",
         descripcion: "Desarrollo de habilidades tecnológicas y pensamiento lógico",
+        image: especial2,
         icon: Code
       },
       {
         nombre: "Inglés",
         descripcion: "Programa de inglés como segundo idioma",
+        image: especial3,
         icon: Globe
       }
     ]
@@ -53,11 +61,13 @@ const serviciosData = [
       {
         nombre: "Festival de las Artes",
         descripcion: "Participación en festivales artísticos y culturales",
+        image: cultural1,
         icon: Music
       },
       {
         nombre: "Actividades Extracurriculares",
         descripcion: "Olimpiadas de matemática, concursos de oratoria y más",
+        image: cultural2,
         icon: Award
       }
     ]
@@ -66,11 +76,11 @@ const serviciosData = [
 
 export default function Servicios() {
   return (
-    <div className="bg-gray-50 py-12">
+    <div className="bg-gradient-to-r from-[#26d0ce] to-[#1a2980]  py-12">
       <Container>
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900">Nuestros Servicios</h1>
-          <p className="mt-4 text-lg text-gray-600">
+          <h1 className="text-4xl font-bold text-white">Nuestros Servicios</h1>
+          <p className="mt-4 text-lg text-gray-50">
             Ofrecemos una educación integral con programas diseñados para el desarrollo completo de nuestros estudiantes
           </p>
         </div>
@@ -85,8 +95,14 @@ export default function Servicios() {
                 {categoria.servicios.map((servicio) => (
                   <Card key={servicio.nombre} className="h-full">
                     <div className="flex flex-col h-full">
-                      <div className="rounded-lg bg-primary-100 p-3 w-fit">
-                        <servicio.icon className="h-6 w-6 text-primary-600" />
+                      <div className="rounded-lg p-3 w-fit mx-auto">
+                        <Image
+                          src={servicio.image}
+                          alt={servicio.nombre}
+                          width={150}
+                          height={150}
+                          className="object-cover"
+                        />
                       </div>
                       <h3 className="mt-4 text-lg font-semibold text-gray-900">
                         {servicio.nombre}

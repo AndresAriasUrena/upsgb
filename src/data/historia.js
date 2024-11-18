@@ -1,4 +1,6 @@
 // src/data/historia.js
+import { historia1, historia2, historia3 } from "@/assets";
+
 export const historiaData = {
     introduccion: {
       titulo: "Don Sotero González Barquero",
@@ -10,6 +12,7 @@ export const historiaData = {
     etapas: [
       {
         titulo: "Primeros Años y Formación",
+        imagen: historia1,
         periodo: "1845-1860",
         contenido: [
           "Nació en San Pablo de Heredia, hijo de don Gabriel González y doña María Barquero.",
@@ -20,6 +23,7 @@ export const historiaData = {
       },
       {
         titulo: "Inicio de su Labor Docente",
+        imagen: historia2,
         periodo: "1863-1867",
         contenido: [
           "Comenzó su carrera docente en su pueblo natal.",
@@ -29,6 +33,7 @@ export const historiaData = {
       },
       {
         titulo: "Legado en San Juan de Dios",
+        imagen: historia3,
         periodo: "1867-1922",
         contenido: [
           "Estableció la primera Escuela para Varones en 1867.",

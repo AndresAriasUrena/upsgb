@@ -1,6 +1,8 @@
 // src/pages/proyectos.jsx
 import React, { useState } from 'react';
 import { TreePine, Bot, BookOpen, Clock, CheckCircle, ChevronDown, ChevronUp, Target, Trophy } from 'lucide-react';
+import Image from 'next/image';
+import { proyecto1, proyecto2, proyecto3 } from '@/assets';
 
 const proyectosData = [
   {
@@ -8,6 +10,7 @@ const proyectosData = [
     descripcion: "Programa de gestión ambiental que promueve la conservación y el desarrollo sostenible.",
     descripcionDetallada: "La Bandera Azul Ecológica es un galardón que premia el esfuerzo y el trabajo voluntario en la búsqueda de la conservación y el desarrollo sostenible.",
     estado: "activo",
+    image: proyecto1,
     Icon: TreePine,
     logros: [
       "Certificación Bandera Azul 2023",
@@ -26,6 +29,7 @@ const proyectosData = [
     descripcion: "Desarrollo de habilidades tecnológicas y pensamiento computacional.",
     descripcionDetallada: "El taller de robótica introduce a los estudiantes en el mundo de la programación y la robótica mediante proyectos prácticos y competencias.",
     estado: "activo",
+    image: proyecto2,
     Icon: Bot,
     logros: [
       "Participación en competencias nacionales",
@@ -44,6 +48,7 @@ const proyectosData = [
     descripcion: "Modernización de la biblioteca escolar con recursos digitales.",
     descripcionDetallada: "Transformación digital de nuestra biblioteca para ofrecer recursos educativos modernos y accesibles a toda la comunidad estudiantil.",
     estado: "en desarrollo",
+    image: proyecto3,
     Icon: BookOpen,
     logros: [
       "Digitalización del catálogo completo",
@@ -70,7 +75,7 @@ export default function Proyectos() {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen py-12">
+    <div className="bg-primary-100 min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center mb-12">
           <TreePine className="h-8 w-8 text-primary-600 mr-3" />
@@ -95,15 +100,24 @@ export default function Proyectos() {
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
-                      <div className="rounded-lg bg-primary-100 p-3">
-                        <ProyectoIcon className="h-6 w-6 text-primary-600" />
+                      <div className="rounded-full bg-primary-100 p-3">
+                        {/* <ProyectoIcon className="h-6 w-6 text-primary-600" /> */}
+                        <Image
+                          src={proyecto.image}
+                          alt={proyecto.titulo}
+                          width={150}
+                          height={150}
+                          className="object-cover"
+                        />
                       </div>
-                      <h2 className="ml-3 text-xl font-bold text-gray-900">
+                      <h2 className="ml-3 text-3xl font-bold text-gray-900">
                         {proyecto.titulo}
                       </h2>
                     </div>
-                    <button className="text-gray-500">
+                    <button className="text-gray-500 flex gap-2">
                       {isExpanded ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+                      {isExpanded ? <p>Mostrar menos</p> : <p>Mostrar más</p>}
+
                     </button>
                   </div>
 

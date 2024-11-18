@@ -15,7 +15,7 @@ export default function Header({ basePath = '' }) {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-primary-600">UPSGB</span>
+              <span className="text-2xl font-bold text-primary-600">Escuela Sotero González B.</span>
             </Link>
           </div>
           

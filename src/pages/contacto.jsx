@@ -4,11 +4,11 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export default function Contacto() {
   return (
-    <div className="bg-gray-50 min-h-screen py-12">
+    <div className="bg-gradient-to-b from-primary-400 to-primary-100 min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900">Contáctenos</h1>
-          <p className="mt-4 text-lg text-gray-600">
+          <h1 className="text-4xl font-bold text-white">Contáctenos</h1>
+          <p className="mt-4 text-lg text-gray-100">
             Estamos aquí para atender sus consultas
           </p>
         </div>

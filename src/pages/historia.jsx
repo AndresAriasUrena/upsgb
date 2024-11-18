@@ -2,14 +2,23 @@
 import React from 'react';
 import { School, Calendar, MapPin, Book, Award } from 'lucide-react';
 import { historiaData } from '@/data/historia';
+import Image from 'next/image';
+import { donSotero } from '@/assets';
 
 export default function Historia() {
   return (
-    <div className="bg-gray-50 min-h-screen py-12">
+    <div className="bg-gradient-to-b from-[#3bb9ff] to-[#f5f7f7] min-h-screen py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Introducción */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <Image
+            src={donSotero}
+            alt='Don Sotero González Barquero'
+            width={400}
+            height={571}
+            className='object-cover mx-auto mb-12 rounded-2xl shadow-2xl'
+          />
+          <h1 className="text-4xl font-bold text-white mb-4">
             {historiaData.introduccion.titulo}
           </h1>
           <div className="flex justify-center items-center space-x-8 text-gray-600">
@@ -31,7 +40,14 @@ export default function Historia() {
               <div className="bg-white rounded-lg shadow-sm p-8">
                 <div className="flex items-center mb-4">
                   <div className="rounded-full bg-primary-100 p-3">
-                    <School className="h-6 w-6 text-primary-600" />
+                    {/* <School className="h-6 w-6 text-primary-600" /> */}
+                    <Image
+                      src={etapa.imagen}
+                      alt={etapa.titulo}
+                      width={100}
+                      height={100}
+                      className="object-cover"
+                    />
                   </div>
                   <div className="ml-4">
                     <h2 className="text-2xl font-bold text-gray-900">{etapa.titulo}</h2>

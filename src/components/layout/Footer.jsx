@@ -9,7 +9,7 @@ export default function Footer({ basePath = '' }) {
         <div className="py-12 md:grid md:grid-cols-2 md:gap-8">
           <div className="space-y-8">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-primary-600">UPSGB</span>
+              <span className="text-2xl font-bold text-primary-600">Escuela Sotero González B.</span>
             </Link>
             <p className="text-base text-gray-500">
               Trabajando para conseguir una escuela más ecológica
@@ -71,7 +71,7 @@ export default function Footer({ basePath = '' }) {
         
         <div className="border-t border-gray-200 py-8">
           <p className="text-base text-gray-400 text-center">
-            &copy; {new Date().getFullYear()} Unidad Pedagógica Sotero González B. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} Escuela Sotero González B. Todos los derechos reservados.
           </p>
         </div>
       </div>

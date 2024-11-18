@@ -4,12 +4,12 @@ import Container from '@/components/ui/Container';
 
 export default function Hero() {
   return (
-    <div className="relative bg-gradient-to-r from-primary-600 to-primary-800 overflow-hidden">
+    <div className="relative bg-hero_bg bg-cover bg-center bg-no-repeat overflow-hidden">
       <Container className="relative z-10 py-24 sm:py-32">
         <div className="mx-auto max-w-4xl">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Unidad Pedagógica Sotero González B.
+              Escuela Sotero González B.
             </h1>
             <p className="mt-6 text-lg leading-8 text-primary-100">
               Formando el futuro de nuestra comunidad con excelencia académica y valores.
