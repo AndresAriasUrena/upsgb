@@ -16,7 +16,7 @@ const proyectosData = [
     image: proyecto1,
     Icon: TreePine,
     logros: [
-      "Certificación Bandera Azul 2023",
+      "Certificación Bandera Azul desde el 2018",
       "Reducción del consumo de agua en un 20%",
       "Implementación de programa de reciclaje"
     ],
@@ -36,35 +36,64 @@ const proyectosData = [
     Icon: Bot,
     logros: [
       "Participación en competencias nacionales",
-      "Desarrollo de 5 proyectos innovadores",
-      "30 estudiantes capacitados en programación básica"
+      "Desarrollo de proyectos innovadores",
+      "Estudiantes de I y II ciclo capacitados en programación NXT PROGRAMMING"
     ],
     objetivos: [
       "Ampliar el programa a más niveles educativos",
-      "Participar en competencias internacionales",
-      "Implementar laboratorio de robótica"
+      "Participar en competencias internacionales"
     ],
     coordinador: "Departamento de Tecnología"
   },
   {
     titulo: "Biblioteca Digital",
     descripcion: "Modernización de la biblioteca escolar con recursos digitales.",
-    descripcionDetallada: "Transformación digital de nuestra biblioteca para ofrecer recursos educativos modernos y accesibles a toda la comunidad estudiantil.",
+    descripcionDetallada: (
+      <div className="space-y-4">
+        <p>Transformación digital de nuestra biblioteca para ofrecer recursos educativos modernos y accesibles a toda la comunidad estudiantil.</p>
+        <div className="flex items-center space-x-2">
+          <a
+            href="https://www.facebook.com/GAR29?mibextid=LQQJ4d"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+          >
+            <svg 
+              className="w-5 h-5 mr-2" 
+              fill="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+            </svg>
+            Visita nuestra página de Facebook
+          </a>
+        </div>
+      </div>
+    ),
     estado: "en desarrollo",
     image: proyecto3,
     Icon: BookOpen,
     logros: [
+      "Préstamo de libros y materiales didácticos",
+      <span key="facebook">
+        Fomentar programa de lectura virtual mediante{' '}
+        <a 
+          href="https://www.facebook.com/GAR29?mibextid=LQQJ4d" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-800 underline"
+        >
+          nuestra página de Facebook
+        </a>
+      </span>
+    ],
+    objetivos: [
       "Digitalización del catálogo completo",
       "Implementación de sistema de préstamos digital",
       "Creación de área de computadoras"
     ],
-    objetivos: [
-      "Ampliar la colección de recursos digitales",
-      "Implementar programa de lectura virtual",
-      "Crear espacios de estudio modernos"
-    ],
     coordinador: "Biblioteca Escolar"
-  }
+}
 ];
 
 export default function Proyectos() {

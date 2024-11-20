@@ -44,7 +44,7 @@ const serviciosData = [
         icon: Users
       },
       {
-        nombre: "Informática y Robótica",
+        nombre: "Formación tecnológica y Robótica",
         descripcion: "Desarrollo de habilidades tecnológicas y pensamiento lógico",
         image: especial2,
         icon: Code

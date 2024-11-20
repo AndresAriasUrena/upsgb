@@ -63,7 +63,7 @@ export default function Contacto() {
                   <h3 className="text-lg font-medium text-gray-900">Horario</h3>
                   <p className="mt-1 text-gray-600">
                     Lunes a Viernes<br />
-                    7:00 AM - 4:30 PM
+                    7:00 AM - 5:40 PM
                   </p>
                 </div>
               </div>
