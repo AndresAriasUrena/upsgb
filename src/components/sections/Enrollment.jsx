@@ -62,7 +62,7 @@ export default function Enrollment() {
                 <Users className="h-6 w-6 text-primary-600 mt-1 flex-shrink-0" />
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Niveles Disponibles</h3>
-                  <p className="text-gray-600">Preescolar, Primer y Segundo Ciclo</p>
+                  <p className="text-gray-600">Primer Ciclo y Segundo Ciclo</p>
                 </div>
               </div>
             </div>

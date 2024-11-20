@@ -10,12 +10,12 @@ const serviciosData = [
     categoria: "Programas Académicos",
     descripcion: "Formación integral siguiendo el programa del MEP",
     servicios: [
-      {
-        nombre: "Educación Preescolar",
-        descripcion: "Desarrollo temprano y preparación para la educación primaria",
-        image: academico1,
-        icon: Heart
-      },
+      // {
+      //   nombre: "Educación Preescolar",
+      //   descripcion: "Desarrollo temprano y preparación para la educación primaria",
+      //   image: academico1,
+      //   icon: Heart
+      // },
       {
         nombre: "Primer Ciclo",
         descripcion: "De primer a tercer grado de educación primaria",

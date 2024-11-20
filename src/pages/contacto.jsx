@@ -26,6 +26,7 @@ export default function Contacto() {
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Dirección</h3>
                   <p className="mt-1 text-gray-600">
+                    400 metro sur de la Iglesia Católica<br />
                     San Juan de Dios, Desamparados<br />
                     San José, Costa Rica
                   </p>
@@ -37,8 +38,8 @@ export default function Contacto() {
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Teléfono</h3>
                   <p className="mt-1 text-gray-600">
-                    <a href="tel:+50622197643" className="hover:text-primary-600">
-                      (506) 2219-7643
+                    <a href="tel:+50622198848" className="hover:text-primary-600">
+                      (506) 2219-8848
                     </a>
                   </p>
                 </div>
@@ -49,8 +50,8 @@ export default function Contacto() {
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Correo</h3>
                   <p className="mt-1 text-gray-600">
-                    <a href="mailto:info@upsgb.ed.cr" className="hover:text-primary-600">
-                      info@upsgb.ed.cr
+                    <a href="esc.soterogonzalezbarquero@mep.go.cr" className="hover:text-primary-600">
+                      esc.soterogonzalezbarquero<br/>@mep.go.cr
                     </a>
                   </p>
                 </div>
