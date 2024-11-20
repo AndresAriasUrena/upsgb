@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "clean": "rm -rf .next out node_modules/.cache",
+    "export-hosting": "rm -rf out && next build",
     "serve": "next build && npx serve@latest out -p 3000",
     "deploy": "npm run clean && next build && touch out/.nojekyll && gh-pages -d out -t true"
   },

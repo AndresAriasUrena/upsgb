@@ -5,6 +5,9 @@ import { GraduationCap, Music, Users, Code, Book, Award, Globe, Heart } from 'lu
 import Image from 'next/image';
 import { academico1, academico2, academico3, especial1, especial2, especial3, cultural1, cultural2 } from '@/assets';
 
+import Meta from '@/components/Meta';
+
+
 const serviciosData = [
   {
     categoria: "Programas Académicos",
@@ -76,6 +79,12 @@ const serviciosData = [
 
 export default function Servicios() {
   return (
+    <>
+    <Meta 
+      title="Servicios Educativos | Unidad Pedagógica Sotero González B."
+      description="Ofrecemos educación preescolar, primaria, programas artísticos, educación especial y robótica. Formación integral con valores y excelencia académica."
+      keywords="educación preescolar, educación primaria, programas artísticos, robótica educativa, educación especial"
+    />
     <div className="bg-gradient-to-r from-[#26d0ce] to-[#1a2980]  py-12">
       <Container>
         <div className="text-center mb-12">
@@ -119,5 +128,6 @@ export default function Servicios() {
         </div>
       </Container>
     </div>
+    </>
   );
 }

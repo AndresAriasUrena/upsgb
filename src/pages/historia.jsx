@@ -5,8 +5,18 @@ import { historiaData } from '@/data/historia';
 import Image from 'next/image';
 import { donSotero } from '@/assets';
 
+import Meta from '@/components/Meta';
+
+
+
 export default function Historia() {
   return (
+    <>
+    <Meta 
+        title="Historia | Unidad Pedagógica Sotero González B."
+        description="Conoce la inspiradora historia de Don Sotero González Barquero, fundador de nuestra institución en 1867. Más de 150 años de excelencia educativa en San Juan de Dios, Desamparados."
+        keywords="historia educación, Sotero González Barquero, fundación escuela, historia educativa Costa Rica"
+      />
     <div className="bg-gradient-to-b from-[#3bb9ff] to-[#f5f7f7] min-h-screen py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Introducción */}
@@ -84,5 +94,6 @@ export default function Historia() {
         </div>
       </div>
     </div>
+    </>
   );
 }

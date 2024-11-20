@@ -4,6 +4,9 @@ import { TreePine, Bot, BookOpen, Clock, CheckCircle, ChevronDown, ChevronUp, Ta
 import Image from 'next/image';
 import { proyecto1, proyecto2, proyecto3 } from '@/assets';
 
+import Meta from '@/components/Meta';
+
+
 const proyectosData = [
   {
     titulo: "Bandera Azul Ecológica",
@@ -75,6 +78,12 @@ export default function Proyectos() {
   };
 
   return (
+    <>
+    <Meta 
+        title="Proyectos Institucionales | Unidad Pedagógica Sotero González B."
+        description="Descubre nuestros proyectos innovadores: Bandera Azul Ecológica, Taller de Robótica y Biblioteca Digital. Comprometidos con la educación moderna y sostenible."
+        keywords="bandera azul ecológica, robótica educativa, biblioteca digital, proyectos educativos, educación sostenible"
+      />
     <div className="bg-primary-100 min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center mb-12">
@@ -200,5 +209,6 @@ export default function Proyectos() {
         </div>
       </div>
     </div>
+    </>
   );
 }
