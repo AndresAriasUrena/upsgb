@@ -26,7 +26,7 @@ export default function Contacto() {
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Dirección</h3>
                   <p className="mt-1 text-gray-600">
-                    400 metro sur de la Iglesia Católica<br />
+                    400m Sur de la Iglesia Católica<br />
                     San Juan de Dios, Desamparados<br />
                     San José, Costa Rica
                   </p>
